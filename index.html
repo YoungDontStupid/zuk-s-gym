@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuk`s Gym</title>
+    <!-- подключение шрифтов inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- подключение библиотеки slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- подключение css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Внешняя обертка -->
+    <div class="wrapper">
+        <!-- Шапка сайта (header main используется только в index)-->
+        <header class="header header-main">
+            <!-- обертка для хэдера -->
+            <div class="container">
+                <!-- состоит из 2 частей: лого и меню -->
+                <div class="header__inner">
+                    <!-- логотип -->
+                    <a href="index.html" class="logo">
+                        <img src="images/logo1.svg" alt="" class="logo1.svg">
+                    </a>
+                    <!-- меню(навигация) -->
+                    <nav class="menu">
+                        <!-- список элементов меню-->
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="index.html" class="menu__list-link">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="pricing.html" class="menu__list-link">УСЛУГИ</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="gallery.html" class="menu__list-link">ТРЕНАЖЕРНЫЙ ЗАЛ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Основаная часть -->
+        <main class="main">
+            <section class="top">
+                <div class="container">
+                    <h1 class="title">
+                        СТАНЬ ЛУЧШЕЙ ВЕРСИЕЙ СЕБЯ
+                    </h1>
+                    <!-- кнопка(ссылка) -->
+                    <a href="join_now.html" class="top__link">
+                        НАЧАТЬ СЕЙЧАС
+                    </a>
+                </div>
+            </section>
+            <!-- слайдер -->
+            <div class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- слайды -->
+                        <div class="swiper-slide" style="background-image: url(images/slide4.jpeg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide3.jpeg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide2.jpeg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide1.jpeg);"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- информационная секция -->
+            <section class="why-gym">
+                <div class="container">
+                    <h2 class="section-title">
+                        Почему Zuk`s Gym?
+                    </h2>
+                    <ul class="why-gym__list">
+                        <li class="why-gym__item">
+                            <img class="why-gym__item-img" src="images/why-gym-1.svg" alt="">
+                            <h3 class="why-gym__item-title">
+                                Низкие цены
+                            </h3>
+                            <p class="why-gym__item-text">
+                                Низкие цены на услуги - это одна из отличительных особенностей клуба
+                                Zuk's gym. Наш фитнес-клуб ставит своей целью сделать
+                                здоровый образ жизни доступным для каждого. Независимо от того,
+                                являетесь ли вы новичком в фитнесе или опытным спортсменом,
+                                в Zuk's gym вы найдете подходящую программу обучения и
+                                тренировок по доступной цене.
+                            </p>
+                        </li>
+                        <li class="why-gym__item">
+                            <img class="why-gym__item-img" src="images/why-gym-2.svg" alt="">
+                            <h3 class="why-gym__item-title">
+                                Лучшие тренажеры
+                            </h3>
+                            <p class="why-gym__item-text">
+                                В нашем клубе вы можете воспользоваться кардиотренажерами: беговыми дорожками,
+                                велотренажерами,
+                                эллиптическими тренажерами и многими другими видами.
+                                В нашей силовой зоне представлены лучшие производители тренажеров,
+                                такие как Life Fitness, Hammer Strength, Precor и многие другие.
+                                Также мы
+                                предлагаем обширную линейку свободных весов, которые подойдут как новичкам,
+                                так и профессиональным спортсменам.
+                                Все тренажеры в Zuk's gym являются высококачественными и долговечными. Они постоянно
+                                проходят техническое обслуживание,
+                                чтобы обеспечить безопасность и комфортность для всех наших членов клуба.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="how-does">
+                <div class="container">
+                    <div class="how-does__inner">
+                        <h2 class="section-title">
+                            Что Вас ждет в Zuk`s Gym?
+                        </h2>
+                        <p class="how-does__text">
+                            Zuk's gym - это современный фитнес-клуб, который оснащен лучшим оборудованием для занятий
+                            спортом. Большой выбор тренажеров различной сложности и назначения позволит каждому
+                            спортсмену подобрать оптимальную нагрузку для своего тренировочного процесса. У нас вы
+                            найдете самые современные и профессиональные тренажеры от ведущих мировых производителей,
+                            которые позволят наиболее эффективно и безопасно нагружать различные группы мышц.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- видео -->
+            <section class="video">
+                <div class="container">
+                    <iframe class="video__content" width="1000" height="500"
+                        src="https://www.youtube.com/embed/24fdcMw0Bj0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <!-- Футер -->
+        <footer class="footer">
+            <!-- обертка для футера -->
+            <div class="container">
+                <!-- меню футера -->
+                <nav class="footer__menu">
+                    <!-- список с ссылками -->
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Контакты</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="https://t.me/zu40k" target="_blank" class="footer__menu-link">Связаться с нами</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 2 ссылки на приложение -->
+                <ul class="app">
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/appstore.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/googleplay.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <!-- текстовый параграф -->
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        Если у вас возникли какие-либо технические вопросы по работе нашего сайта, не стесняйтесь
+                        обращаться к нам для помощи!
+                        Наша цель - обеспечить максимальный комфорт при использовании сайта.
+                        Вы можете связаться с нами по электронной почте an4erpr@gmail.com.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- подключение библиотеки swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- подключение js -->
+    <script src="js/main.js"></script>
+</body>
+</html>

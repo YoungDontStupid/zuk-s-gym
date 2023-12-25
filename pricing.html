@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuk`s Gym</title>
+    <!-- подключение шрифтов inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- подключение библиотеки slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- подключение css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Внешняя обертка -->
+    <div class="wrapper">
+        <!-- Шапка сайта (header main используется только в index)-->
+        <header class="header">
+            <!-- обертка для хэдера -->
+            <div class="container">
+                <!-- состоит из 2 частей: лого и меню -->
+                <div class="header__inner">
+                    <!-- логотип -->
+                    <a href="index.html" class="logo">
+                        <img src="images/logo1.svg" alt="" class="logo1.svg">
+                    </a>
+                    <!-- меню(навигация) -->
+                    <nav class="menu">
+                        <!-- список элементов меню-->
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="index.html" class="menu__list-link">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="pricing.html" class="menu__list-link">УСЛУГИ</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="gallery.html" class="menu__list-link">ТРЕНАЖЕРНЫЙ ЗАЛ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Основаная часть -->
+        <main class="main">
+            <section class="price">
+                <div class="container">
+                    <h2 class="section-title">
+                        Тарифный план
+                    </h2>
+                    <ul class="pricing__list">
+                        <li class="pricing__item">
+                            <h3 class="pricing-title">
+                                Базовый план
+                            </h3>
+                            <h3 class="pricing-title">
+                                3390 руб/мес
+                            </h3>
+                            <p class="why-gym__item-text">Кардио упражнения</p>
+                            <p class="why-gym__item-text">Силовые упражнения</p>
+                            <p class="why-gym__item-text">План питания</p>
+                            <p class="why-gym__item-text">Душ</p>
+                            <p class="why-gym__item-text">Стандартный зал</p>
+                            <button class="pricing__btn" type="submit">Выбрать</button>
+                        </li>
+                        <li class="pricing__item">
+                            <h3 class="pricing-title">
+                                Премиальный план
+                            </h3>
+                            <h3 class="pricing-title">
+                                4390 руб/мес
+                            </h3>
+                            <p class="why-gym__item-text">Базовый план</p>
+                            <p class="why-gym__item-text">Индивидуальная программа тренировок</p>
+                            <p class="why-gym__item-text">Сауна</p>
+                            <p class="why-gym__item-text">Индивидуальный тренер</p>
+                            <p class="why-gym__item-text">VIP зал</p>
+                            <button class="pricing__btn" type="submit">Выбрать</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+        <!-- Футер -->
+        <footer class="footer">
+            <!-- обертка для футера -->
+            <div class="container">
+                <!-- меню футера -->
+                <nav class="footer__menu">
+                    <!-- список с ссылками -->
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Контакты</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="https://t.me/zu40k" target="_blank" class="footer__menu-link">Связаться с нами</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 2 ссылки на приложение -->
+                <ul class="app">
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/appstore.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/googleplay.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <!-- текстовый параграф -->
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        Если у вас возникли какие-либо технические вопросы по работе нашего сайта, не стесняйтесь
+                        обращаться к нам для помощи!
+                        Наша цель - обеспечить максимальный комфорт при использовании сайта.
+                        Вы можете связаться с нами по электронной почте an4erpr@gmail.com.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- подключение библиотеки swiper -->Í
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- подключение js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

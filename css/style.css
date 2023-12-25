@@ -1,0 +1,443 @@
+.html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    /* наследовать от родителя */
+    box-sizing: inherit;
+    /* убирает линию над хэдэром */
+    margin: 0;
+    padding: 0;
+}
+
+/* задаю для wrapper min высоту в 100% */
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    /* убирает точки у элементов меню */
+    list-style-type: none;
+}
+
+a {
+    /* убрать всем ссылкам нижнее подчеркивание */
+    text-decoration: none;
+    /* наследует цвет родителя(body)*/
+    color: inherit;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили хэдера */
+.container {
+    /* макс ширина */
+    max-width: 1220px;
+    /* размещение по центру */
+    margin: 0 auto;
+    /* отсуп от краев слева и справа */
+    padding: 0 10px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* размер шрифта по умолчанию*/
+    font-size: 16px;
+    /* толщина шрифта по умолчанию*/
+    font-weight: 400;
+    /* высота строки */
+    line-height: 1.3;
+}
+
+.header {
+    background-color: #151515;
+}
+
+.header-main {
+    /* прозрачный фон */
+    background-color: transparent;
+    /* чтобы поднять изображение слайдера */
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.header__inner {
+    /* расстояние сверху */
+    padding-top: 40px;
+    /* отступ снизу */
+    padding-bottom: 45px;
+    /* разделение по сетке на 2 части, шли друг за другом*/
+    display: flex;
+    /* отодвигает 2 элемен та в разные стороны */
+    justify-content: space-between;
+    /* выравнивание по нижней линии */
+    align-items: flex-start;
+}
+
+.menu__list {
+    display: flex;
+    /* расстояние между элементами меню */
+    gap: 35px;
+}
+
+.menu__list-link {
+    color: #fff;
+    /* верхний регистр для ссылок меню */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Стили футера */
+.footer {
+    background-color: #151515;
+    /* отступы сверху и снизу */
+    padding: 50px 0 32px;
+    color: #fff;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.footer__menu-list {
+    /* будет перенос слов при длинном тексте, дабы не поломать сайт*/
+    max-width: 250px;
+}
+
+.footer__menu-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+/* селектор + делает применение к соседнему item без взаимодействия на title */
+.footer__menu-item+.footer__menu-item {
+    padding-top: 20px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 52px;
+}
+
+.footer__copy {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.copy__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* стили для main */
+.main {
+    /* чтобы максимально растянуть main и прибить футер к низу страницы*/
+    flex-grow: 1;
+}
+
+.top {
+    padding-top: 105px;
+    color: #fff;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    /* чтобы поднять изображения слайдера */
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top__link {
+    background-color: #151515;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    /* выглядела как строчная, но применялись все ccs сво-ва, как для блочного тега */
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* стили слайдера */
+/* затемнение */
+.swiper::after {
+    content: '';
+    background-color: rgba(21, 21, 21, .4);
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.swiper-slide {
+    /* чтобы на большом мониторе картинка не повторялась */
+    background-repeat: no-repeat;
+    /* чтобы заполняло пространство (растягивалась, если есть необходимость) */
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    /* пагинация прямоугольником */
+    border-radius: 0;
+    /* некликабельный */
+    opacity: 1;
+    /* делаю важнее, чем главное сво-во */
+    margin: 0 15px !important;
+}
+
+.swiper-pagination-bullet-active {
+    height: 6px;
+    background-color: #fff;
+    bottom: 50px !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50px;
+}
+
+.why-gym {
+    padding: 150px 0;
+}
+
+.why-gym__list {
+    display: grid;
+    /* расположить в ряд 2 блока */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.why-gym__item-img {
+    margin-bottom: 30px;
+}
+
+.why-gym__item-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-gym__item-text {
+    text-align: left;
+}
+
+.how-does__text {
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+/* стили видео */
+.video {
+    padding-bottom: 150px;
+}
+
+.video__content {
+    margin: 0 auto;
+    display: block;
+}
+
+/* стили страницы join_now */
+.contacts {
+    /* отступы  */
+    padding: 90px 0 100px;
+}
+
+.contacts-title {
+    margin-bottom: 20px;
+}
+
+.contacts__text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.form {
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form__input {
+    width: 200px;
+    padding: 18px 20px;
+    display: inline-block;
+    border: 1px solid #0066ff;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    /* размер шрифта по умолчанию*/
+    font-size: 16px;
+    /* толщина шрифта по умолчанию*/
+    font-weight: 400;
+    /* высота строки */
+    line-height: 1.3;
+    color: #000;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    /* размер шрифта по умолчанию*/
+    font-size: 16px;
+    /* толщина шрифта по умолчанию*/
+    font-weight: 400;
+    /* высота строки */
+    line-height: 1.3;
+    color: #000;
+    opacity: 0.5;
+}
+
+.form__textarea {
+    width: 100%;
+    resize: none;
+    padding: 28px 20px;
+    height: 100px;
+    border: 1px solid #0066ff;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 50px;
+    /* размер шрифта по умолчанию*/
+    font-size: 16px;
+    /* толщина шрифта по умолчанию*/
+    font-weight: 400;
+    /* высота строки */
+    line-height: 1.3;
+    color: #000;
+    margin: 50px;
+}
+
+.form__btn {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #151515;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding: 13px 61px;
+    margin: 0 auto;
+}
+
+/* стили для фото */
+.photo {
+    padding: 50px;
+}
+
+.photo__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.photo__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photo__item-img {
+    width: 100%;
+}
+
+section.gallery {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    padding: 45px 0;
+}
+
+h2.title {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+h2.title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #151515;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* стили для услуг */
+.price {
+    padding: 100px 100px;
+}
+
+.pricing__list {
+    display: grid;
+    /* расположить в ряд 2 блока */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+    
+
+.pricing-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-gym__item-text {
+    text-align: center;
+    padding: 5px;
+}
+
+.pricing__btn{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #151515;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding: 13px 100px;
+    margin: 0 auto;
+}
